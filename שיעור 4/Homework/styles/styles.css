@@ -1,0 +1,37 @@
+.nav-box {
+    background-color: lightgray;
+}
+
+.thursday {
+    background-color: brown;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px 5px 5px 40px;
+  text-align:start;
+}
+
+#boxes {
+    margin: 20px 0 20px 0;
+}
+
+.generic-box {
+    border: 2px black solid;
+    display: inline-block;
+    margin: 10px;
+    padding:  0 15px 10px 15px;
+}
+
+.box1, .box3 {
+    background-color: green;
+}
+
+.box2 {
+    background-color: aqua;
+}
+
+footer {
+    background-color: yellow;
+}

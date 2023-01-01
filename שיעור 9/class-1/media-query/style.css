@@ -1,0 +1,48 @@
+
+/* 
+@media (max-width:480px){
+   div{
+       background-color: blue;
+   }
+    body{
+        background-color: yellow;
+    }
+
+} */
+
+
+@media(min-width:320px){
+    div{
+        height: 100px;
+        width: 200px;
+        background-color: green;
+    }
+
+}
+
+@media(min-width:720px){ 
+    div{
+ 
+        background-color: blue;
+    }
+    i.fas.fa-square-phone-flip{
+        display: none;
+    }
+}
+
+
+@media(min-width:1080px){ 
+    div{
+ 
+        background-color: red;
+    }
+}
+
+i.fas.fa-square-phone-flip {
+    font-size: 46px;
+    position: absolute;
+    right: 31px;
+    bottom: 42px;
+    color: green;
+  
+}

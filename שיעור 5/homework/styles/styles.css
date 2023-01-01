@@ -1,0 +1,102 @@
+body {
+    font-family: arial, sans-serif;
+    direction: rtl;
+    text-align: center;
+}
+
+.title-text {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.colored {
+    background-color: green;
+    /* height:90vh; */
+    border: 5px solid rgb(52, 138, 91);
+    direction: rtl;
+    margin: 10px;
+    text-align: start;
+    padding: 30px;
+}
+
+.white-text {
+    color: white;
+}
+
+main {
+    background-color: white;
+    margin: 0 20px;
+}
+
+.inline-box {
+    display: inline-block;
+}
+
+.sidebar {
+    vertical-align: top;
+    width: 20%;
+    background-color: green;
+    /* padding-top: 20px; */
+}
+
+.text-pane {
+    vertical-align: top;
+    width:70%;
+    background-color: white;
+    padding-right: 30px;
+   
+}
+ 
+.nav-button {
+  background: #2e6285;
+  background-image: -webkit-linear-gradient(top, #0b2b41, #1c628d);
+  background-image: -moz-linear-gradient(top, #0b2b41, #1c628d);
+  background-image: -ms-linear-gradient(top, #0b2b41, #1c628d);
+  background-image: -o-linear-gradient(top, #0b2b41, #1c628d);
+  background-image: linear-gradient(to bottom, #0b2b41, #1c628d);
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 20px;
+  text-decoration: none;
+  margin: 0 5px 5px 5px;
+}
+
+.nav-button:hover {
+  background: #1c628d;
+  background-image: -webkit-linear-gradient(top, #1c628d, #0b2b41);
+  background-image: -moz-linear-gradient(top, #1c628d, #0b2b41);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #0b2b41);
+  background-image: -o-linear-gradient(top, #3cb0fd, #0b2b41);
+  background-image: linear-gradient(to bottom, #3cb0fd, #0b2b41);
+  text-decoration: none;
+}
+
+.nav-link:link, .nav-link:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.text-image {
+    float: left;    
+    margin: 0 15px 0 15px;
+    width: 35%;
+}
+
+.info-title {
+    font-size: 2.5rem;
+}
+
+.info-text {
+    font-size: 1.5rem;
+}
+
+.footer-text {
+    font-size: 1.5rem ;
+    margin: 50px 20px 20px;
+}

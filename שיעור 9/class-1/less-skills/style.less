@@ -1,0 +1,40 @@
+@html: green;
+@css: orange;
+@javascript:yellow;
+@csharp: blue;
+@mainColor:gray;
+ @debugMode:true;
+
+ body when(@debugMode = true){     
+     background-color: black;
+ }
+
+.bar {
+    height: 20px;
+    text-align: right;
+    color: #fff;
+}
+.designSkill(@width, @color){
+    width: @width;
+    background-color: @color;
+}
+.skills{
+    width: 100%;
+    height: 20px;
+    background-color:@mainColor;
+    .html{
+        .designSkill(90%, @html)
+    }
+    .css{
+        .designSkill(80%, @css) 
+    }
+    .javascript{
+        .designSkill(70%, @javascript)          
+    }
+    .csharp{
+        .designSkill(60%, @csharp)
+    }
+    
+}
+
+

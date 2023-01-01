@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+</head>
+<body>
+    <header>
+      <a href="index.html">Home</a> <span>|</span>
+      <a href="my_pokemons.html">My Pokemons</a> <span>|</span>
+      <a href="about.html">About me</a> <span>|</span>
+      <a href="contact.html">Contact</a>
+    </header>
+    <hr>
+    <h1>About Me</h1>
+    <hr>
+    <ul>
+        <li> <a href='https://www.facebook.com'>Facebook</a> </li>
+        <li> <a href="https://www.google.com">Google</a></li>
+    </ul>
+    <hr>
+    <div style='display: flex;'>
+        <div style='width: 30vw;'>
+            <form>
+                <fieldset style='background-color: rgb(235, 243, 243); border:2px dashed rgb(118, 243, 216);'>
+                    
+                    <fieldset>
+                        <legend>Personal Details</legend>
+                        <input type="text" placeholder='First Name'><br><br>
+                        <input type="text" placeholder='Last Name'><br><br>
+                        <input type="text" placeholder='Mobile Phone'><br><br>
+                        <input type="text" placeholder='Email'><br><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Adress</legend>
+                        <input type="text" placeholder='Street Address'><br><br>
+                        <input type="text" placeholder='City'><br><br>
+                        <input type="number" placeholder='Zip Code' max='9999999' min='1111111'><br><br>
+                        <input type="text" placeholder='Country'><br><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Purchase options</legend>
+                        <label for="pok_list">Choose Your Pokemon:</label>
+                        <select id="pok_list" name="pok_list">
+                            <option value="charmeleon">Charmeleon</option>
+                            <option value="seel">Seel</option>
+                            <option value="charmander">Charmander</option>
+                            <option value="hitmonchan">Hitmonchan</option>
+                        </select>
+                        <br><br>
+                        <label for="mastercard">Mastercard</label>
+                        <input type="radio" id="mastercard" name="pay_method" value="Mastercard" checked>
+                        <label for="visa">&nbsp;&nbsp;&nbsp;Visa</label>
+                        <input type="radio" id="visa" name="pay_method" value="Visa">
+                        <label for="paypal">&nbsp;&nbsp;&nbsp;Paypal</label>
+                        <input type="radio" id="paypal" name="pay_method" value="PayPal">
+                    </fieldset>
+                    <br>
+                    <button type='submit'>Submit</button>
+                </fieldset>
+
+            </form>
+        </div>
+        <div >
+            <img src="images/sketch.jpg" alt="pokemon sketch" style='width: 30vw;'>
+        </div>
+    </div>
+
+</body>

@@ -1,0 +1,31 @@
+.skills{
+    width: 100%;
+    height: 20px;
+    background-color: #ddd;
+}
+.bar {
+    height: 20px;
+    text-align: right;
+    color: #fff;
+}
+.html {
+    width: 90%;
+    background-color: blue;
+}
+
+.css {
+    width: 80%;
+    background-color: green;
+}
+
+
+.javascript {
+    width: 70%;
+    background-color: red;
+}
+
+.csharp {
+    width: 60%;
+    background-color: palegreen;
+
+}

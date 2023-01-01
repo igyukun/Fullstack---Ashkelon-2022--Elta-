@@ -1,0 +1,262 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.colored {
+  display: flex;
+  flex-direction: column;
+  background-color: #65aaf0;
+  margin: 10px 0 0;
+}
+
+/* ============== */
+/* HEADER SECTION */
+/* ============== */
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-weight: 500;
+}
+
+.header-item {
+  width: 20%;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+nav-bar {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-btn {
+  display: flex;
+  width: 100px;
+  padding: 5px;
+  text-align: center;
+  justify-content: center;
+  height: 80px;
+  align-items: center;
+  min-width: max-content;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  color: rgb(72, 72, 72);
+  background-color: white;
+  font-weight: 600;
+}
+
+/* ============ */
+/* MAIN SECTION */
+/* ============ */
+
+main {
+  display: flex;
+    /* flex-flow: row wrap; */
+  background-image: url("../images/home_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 65vh;
+}
+
+.form-holder {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.message-submit-box {
+  display: flex;
+  flex-flow: column;
+  background-color: rgb(0, 0, 0, 0.7);
+  padding: 10px 20px 30px;
+  min-width: min-content;
+  min-height: 260px;
+  max-width: 50vw;
+  border-radius: 3%;
+  margin-left: 30vw;
+  margin-top: 5vh;
+}
+
+.form-title {
+  align-self: center;
+  color: white;
+  font-size: 2.1rem;
+  font-weight: 500;
+  margin: 5px 0 15px 0;
+}
+
+.frm-message-submit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: max-content;
+  gap: 10px;
+}
+
+.form-sub-section {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.input-label {
+  align-self: center;
+  color: white;
+  margin: 10px 0 5px;
+}
+
+.starred::after {
+  content: " *";
+  color: red;
+}
+
+.btn-submit {
+  margin-top: 10px;
+  text-align: center;
+  background-color: #65aaf0;
+  border: solid 1px white;
+  font-size: 0.8rem;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: white;
+  border-color: #65aaf0;
+  color: black;
+}
+
+/* ============ */
+/* INFO SECTION */
+/* ============ */
+
+.info-board {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 20px;
+  gap: 50px;
+}
+
+.info-card {
+  display: flex;
+  flex-flow: column wrap;
+  width: 20vw;
+  padding: 10px 25px;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.info-card-centered {
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  width: 20vw;
+  padding: 10px;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.card-title {
+  color: rgb(47, 47, 47);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.card-text {
+  font-family: "Mukta", sans-serif;
+  font-weight: 300;
+}
+
+.image-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.project-img {
+  width: 40%;
+  padding: 0 2px;
+}
+
+.input-subscribe {
+  height: 40px;
+  text-align: center;
+  width: 70%;
+  padding: 0;
+}
+
+.btn-subscribe {
+  text-align: center;
+  background-color: rgb(47, 47, 47);
+  border: solid 2px white;
+  color: white;
+  width: 70%;
+  height: 40px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.btn-subscribe:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
+}
+
+info-footer {
+  display: flex;
+  flex-flow: row wrap;
+  height: 30px;
+  color: rgb(6, 6, 6);
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+info-footer a {
+  color: rgb(47, 47, 47);
+}
+
+info-footer div {
+  display: flex;
+  border: 1px solid rgb(27, 27, 27);
+  border-radius: 20%;
+  height: 1.5rem;
+  width: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+info-footer a:visited,
+info-footer a:link {
+  text-decoration: none;
+}
+
+info-footer div:hover {
+  color: cornflowerblue;
+  border-color: cornflowerblue;
+}
