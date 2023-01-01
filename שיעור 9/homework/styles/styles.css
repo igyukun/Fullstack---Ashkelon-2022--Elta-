@@ -1,0 +1,202 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(247, 251, 255);
+    margin: 0 5px;
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+
+/* HEADER SECTION */
+
+header{
+    color: #6f6f6f;
+    font-size: 1.5rem;
+    padding-left: 30px;
+    align-self: flex-start;
+}
+
+header img {
+    width: 50px;
+    opacity: 0.2;
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ACTION CALL SECTION */
+
+.action-container {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    background-image: url('../images/bg-blended.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    margin: 0;
+    gap: 10px;
+}
+
+
+.action-container p {
+    color: white;
+    max-width: 50vw;
+}
+
+.action-sub {
+        margin: 30px;
+    }
+
+@media (max-width: 800px) {
+    .action-container {
+        flex-direction: column;
+        width: 100vw;
+    }
+    
+    .form-container {
+        align-items: center;
+    }
+
+    .action-container p {
+        max-width: 100vw;
+    }
+}
+
+.headline-title {
+    font-size: 2rem;
+}
+
+.headline-subtitle {
+    font-size: 1.3rem;
+}
+
+.headline-text {
+    font-size: 1rem;
+}
+
+.form-title {
+    font-size: 1.5rem;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(161, 197, 233, 0.3);
+    padding: 20px 50px 50px;
+}
+
+.form-container > input {
+    height: 30px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.input-label {
+    color: #f5f9fb;
+    margin-bottom: 5px;
+}
+.input-label::after {
+    content: ' *';
+}
+
+.btn-free-quote {
+    width: 210px;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 20px;
+    color: white;
+    background-color: coral;
+    border: 1px solid rgb(149, 79, 53);
+}
+
+.btn-free-quote:hover {
+    background-color: rgb(251, 94, 37);
+}
+
+.form-footer {
+    font-size: 0.8rem;
+}
+
+
+/* INFO SECTION */
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.info-card {
+    margin: 20px;
+    width: 20%;
+    min-width: 300px;
+    color: #6f6f6f;
+}
+
+.info-card i{
+    font-size: 3rem;
+}
+
+.info-card-title {
+   font-size: 1.5rem; 
+}
+
+.info-card-text {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+/* TESTIMONY SECTION */
+
+.testimony-container {
+    text-align: center;
+    background-image: url('../images/testimony-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    padding: 50px 0;
+    color: #6f6f6f;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.testimony-container img {
+    width: 100px;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+.testimony-container hr {
+    width: 100px;
+    border: 1px solid #6f6f6f;
+    
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    flex-wrap: wrap; */
+    color: #9e9c9c;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
