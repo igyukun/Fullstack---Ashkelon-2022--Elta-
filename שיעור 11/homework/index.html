@@ -7,78 +7,90 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
-    <title>Responsive Site</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Responsive Site</title>
     <script src="https://kit.fontawesome.com/f425803bcb.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </head>
 <body>
-    <main>
-        <header>
-            <p>Coon<span class='bold-text'>GO</span></p>
-            <img src="images/raccoon-icon-png-free.png" alt="">
-        </header>
-        <section class='action-container'>
-            <div class='action-sub' >
-                <p class='headline-title'>The Main Headline Placed Here</p>
-                <p class='headline-subtitle'>Here goes a punch line</p>
-                
+    <nav class='navbar container-flex position-relative mx-auto'>
+            <p class="navbar-brand align-middle">
+                <img src="images/raccoon-icon-png-free.png" alt="navbar logo">
+                Coon<span class='bold-text'>GO</span>
+            </p>
+    </nav>
+
+    <section class='action-container container-flex p-4'>
+        <div class='row'>
+            <div class='container action-sub col-lg-6 col-md-6 col-sm-11 text-white text-lg-start text-md-start text-sm-center text-center p-5' >
+                <p class='headline-title fs-2'>The Main Headline Placed Here</p>
+                <p class='headline-subtitle fs-3'>Here goes a punch line</p>  
                 <p class='headline-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
                 </p>
             </div>
-            <div class='action-sub'>
+            <div class='container action-sub col-xxl-3 col-xl-4 col-lg-5 col-md-6 col-sm-9 text-white text-lg-start text-md-start text-center text-sm-center'>
                 <form class='form-container' action="">
-                    <p class='form-title'>Interested? Let us hear from you</p>
-                    <label class='input-label' for="name-input">Name:</label>
-                    <input id='name-input' type="text">
-                    <label class='input-label' for="email-input">Email:</label>
-                    <input id='email-input' type="text">
-                    <label class='input-label' for="phone-input">Phone:</label>
-                    <input id='phone-input' type="text">
-                    <button class='btn-free-quote'>GET FREE QUOTE</button>
-                    <p class='form-footer'>Your privacy is paramount - we will not share your information</p>
+                    <p class='form-title fs-4 '>Interested? Let us hear from you</p>
+                    <label class='input-label form-label' for="name-input">Name:</label>
+                    <input id='name-input' class='form-control mb-3' type="text">
+                    <label class='input-label form-label' for="email-input" >Email:</label>
+                    <input id='email-input' class='form-control mb-3' type="email" placeholder='your@email.com'>
+                    <label class='input-label form-label' for="phone-input">Phone:</label>
+                    <input id='phone-input' class='form-control mb-3' type="text">
+                    <button class='btn btn-outline-light btn-free-quote'>GET FREE QUOTE</button>
+                    <p class='form-footer mt-3'>Your privacy is paramount - we will not share your information</p>
                 </form>
             </div>
-        </section>
-        <div class='info-card'>
-            <i class="fa-regular fa-thumbs-up"></i>
-            <p class='info-card-title'>Why Us</p>
-            <p class='info-card-text'>Pellentesque habitant morbi tristique senectus et netus et malesuada fames. <br> 
-                Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit. 
-            </p>
         </div>
-        <div class='info-card'>
-            <i class="fa-solid fa-gift"></i>
-            <p class='info-card-title'>Special Offer</p>
-            <p class='info-card-text'>
-                Commodo elit at imperdiet dui accumsan sit amet nulla. In massa tempor nec feugiat nisl pretium. <br>
-                Lorem mollis aliquam ut porttitor leo a diam. Risus quis varius quam quisque id. Sed faucibus turpis in eu mi bibendum. Viverra adipiscing at in tellus integer feugiat. Orci a scelerisque purus semper eget. 
-            </p>
+    </section>
+    <section class=' info-section'>
+        <div class='row container-flex p-5 text-lg-center text-md-center'>
+            <div class='info-card auto container col-lg-3 col-md-6 col-sm-8 mt-sm-5 '>
+                <i class="fa-regular fa-thumbs-up"></i>
+                <p class='info-card-title mt-3'>Why Us</p>
+                <p class='info-card-text'>Pellentesque habitant morbi tristique senectus et netus et malesuada fames. <br> Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit. 
+                </p>
+            </div>
+            <div class='info-card container col-lg-3 col-md-6 col-sm-8  mt-sm-5'>
+                <i class="fa-solid fa-gift"></i>
+                <p class='info-card-title mt-3'>Special Offer</p>
+                <p class='info-card-text'>
+                    Commodo elit at imperdiet dui accumsan sit amet nulla. In massa tempor nec feugiat nisl pretium. <br>Lorem mollis aliquam ut porttitor leo a diam. Risus quis varius quam quisque id. Sed faucibus turpis in eu mi bibendum. Viverra adipiscing at in tellus integer feugiat. Orci a scelerisque purus semper eget. 
+                </p>
+            </div>
+            <div class='info-card container col-lg-3  col-md-6 col-sm-8  mt-sm-5'>
+                <i class="fa-regular fa-user"></i>
+                <p class='info-card-title mt-3'>About Us</p>
+                <p class='info-card-text'>
+                    Odio aenean sed adipiscing diam donec adipiscing tristique risus. Amet porttitor eget dolor morbi non arcu risus quis. 
+                    <br> vitae tortor condimentum lacinia quis vel eros donec ac. Vestibulum morbi blandit cursus risus at ultrices mi tempus.
+                </p>
+            </div>
         </div>
-        <div class='info-card'>
-            <i class="fa-regular fa-user"></i>
-            <p class='info-card-title'>About Us</p>
-            <p class='info-card-text'>
-                Odio aenean sed adipiscing diam donec adipiscing tristique risus. Amet porttitor eget dolor morbi non arcu risus quis. 
-                <br> vitae tortor condimentum lacinia quis vel eros donec ac. Vestibulum morbi blandit cursus risus at ultrices mi tempus.
-            </p>
-        </div>
-        <section class='testimony-container'>
-            <img src="images/testimony.jpg" alt="">
-            <p class='testimony-text'>
-                Donec adipiscing tristique risus nec feugiat in fermentum. <br>
-                Nunc lobortis mattis aliquam faucibus purus in massa tempor. Commodo sed egestas egestas fringilla. <br> 
-                Elementum eu facilisis sed odio. 
-            </p>
-            <hr>
-            <p class='testimony-text'>
-                Fester Adams <br> Uncle, Adams Family, inc
-            </p>
-        </section>
-        <footer>
-            <p>All rights reserved | Disclaimer | Legal Agreement | Privacy Policy | Contact Us</p>
-        </footer>
-    </main>
+    </section>
+    <section class='testimony-container container-flex justify-content-center text-center p-4'>
+        <img src="images/testimony.jpg" alt="">
+        <p class='testimony-text mt-3'>
+            Donec adipiscing tristique risus nec feugiat in fermentum. <br>
+            Nunc lobortis mattis aliquam faucibus purus in massa tempor. Commodo sed egestas egestas fringilla. <br> 
+            Elementum eu facilisis sed odio. 
+        </p>
+        <hr class='mx-auto'>
+        <p class='testimony-text'>
+            Fester Adams <br> Uncle, Adams Family, inc
+        </p>
+    </section>
+    <footer class='container'>
+        <p class='m-4 text-center'>
+            <a class='link-secondary' href='#'>All rights reserved</a> | 
+            <a class='link-secondary' href='#'>Disclaimer</a> | 
+            <a class='link-secondary' href='#'>Legal Agreement</a> | 
+            <a class='link-secondary' href='#'>Privacy Policy</a> | 
+            <a class='link-secondary' href='#'>Contact Us </a>
+        </p>
+      </footer>
 </body>
 </html>
