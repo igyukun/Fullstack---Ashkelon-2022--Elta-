@@ -1,0 +1,63 @@
+.container-fluid {
+    margin: 0 !important;
+}
+
+header {
+    height:60px;
+}
+
+/* SUBSCRIBE SECTION */
+
+.subscribe-section{
+    background-image: url('../images/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+form input {
+    width: 150px;
+}
+.times-font {
+     font-family: TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif; 
+}
+.subscribe-form input {
+    border: 1px solid darkgray;
+    border-radius: 0;
+}
+.subscribe-form button {
+    border-radius: 0;
+}
+
+/* ABOUT SECTION */
+.avatar-img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.learn-section.card-body {
+}
+
+/* ABOUT SECTION */
+.about-section {
+    background-color: #F9EAD6;
+}
+
+/* TESTIMONIAL SECTION */
+.testimon-img{
+    border-radius: 50%;
+    width:120px;
+}
+footer {
+    height:60px;
+    background-color: black;
+}
+
+footer img {
+    -webkit-filter: invert(1); /* safari 6.0 - 9.0 */
+    filter: invert(1);
+}
