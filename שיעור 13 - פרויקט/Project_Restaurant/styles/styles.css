@@ -1,0 +1,50 @@
+body {
+  /* font-family: 'Source Code Pro', monospace; */
+  /* font-family: 'VERDANA', sans-serif; */
+}
+
+/* ENTRY SECTION */
+
+.entry-section {
+  height: 85vh;
+  background-image: url("../images/hero_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* NAVBAR */
+
+.navbar-brand {
+  letter-spacing: 0.3rem;
+}
+
+.navbar a {
+  color: white;
+}
+
+/* .navbar li {
+    display: inline-block;
+} */
+
+.nav a {
+  color: white;
+}
+
+nav a :is(:visited, :active) {
+  text-decoration: none;
+  color: white;
+}
+
+#navbarText {
+  letter-spacing: 0.1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.nav-contact-btn {
+  background-color: #cf1d16;
+  letter-spacing: 0.1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
