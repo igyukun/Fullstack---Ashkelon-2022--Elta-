@@ -1,19 +1,65 @@
+/* =================================== */
+/* GENERAL                             */
+/* =================================== */
+
 body {
   /* font-family: 'Source Code Pro', monospace; */
-  /* font-family: 'VERDANA', sans-serif; */
+  /* font-family: 'Ubuntu', sans-serif; */
+  margin: 0;
+  padding: 0;
 }
 
-/* ENTRY SECTION */
+main {
+  margin: 0;
+  padding: 0;
+}
 
+.container-fluid {
+  --bs-gutter-x: 0;
+}
+.blacked {
+  background-color: #242424;
+}
+
+.grayed-section {
+  /* padding: 50px 0; */
+  background-color: rgb(245, 245, 245);
+}
+
+.btn {
+  border-width: 1px;
+  border-radius: 0;
+}
+
+.btn:hover {
+  border-color: rgb(39, 39, 39);
+  background-color: white;
+  color: black !important;
+}
+
+/* =================================== */
+/* ENTRY SECTION                       */
+/* =================================== */
 .entry-section {
-  height: 85vh;
-  background-image: url("../images/hero_2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: black;
 }
 
-/* NAVBAR */
+/* =================================== */
+/* NAVBAR                              */
+/* =================================== */
+.navbar {
+    z-index: 2;
+    background-color: rgb(22, 21, 21, 0.1);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+@media (max-width: 767px) {
+  .navbar {
+        background-color: rgb(22, 21, 21, 0.4);
+    }
+}
 
 .navbar-brand {
   letter-spacing: 0.3rem;
@@ -22,10 +68,6 @@ body {
 .navbar a {
   color: white;
 }
-
-/* .navbar li {
-    display: inline-block;
-} */
 
 .nav a {
   color: white;
@@ -38,8 +80,8 @@ nav a :is(:visited, :active) {
 
 #navbarText {
   letter-spacing: 0.1rem;
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 
 .nav-contact-btn {
@@ -47,4 +89,257 @@ nav a :is(:visited, :active) {
   letter-spacing: 0.1rem;
   font-size: 0.9rem;
   font-weight: 600;
+  border-radius: 0 !important;
+}
+
+.nav-contact-btn:hover {
+  background: none;
+  color: white !important;
+  border-color: white;
+}
+
+
+/* =================================== */
+/* CAROUSEL - ENTRY SECTION            */
+/* =================================== */
+#EntrySectionCarousel  img {
+  object-fit:cover !important ;
+  height: 90vh !important;
+}
+
+#EntrySectionCarousel .btn {
+  border-color: white;
+  z-index: 3;
+}
+
+.carousel-caption-title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.carousel-caption-text {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.slide-1 {
+  background-color: rgb(22, 21, 21, 0.1);
+  border-radius: 1%;
+}
+
+@media (max-width: 450px) {
+  .carousel-caption-title {
+  font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .carousel-caption-title {
+    font-size: 1.5rem;
+  }
+  .carousel-caption-text {
+    font-size: 0.8rem;
+  }
+}
+
+/* =================================== */
+/* FOOD CATEGORIES SECTION             */
+/* =================================== */
+.category-img {
+  width: 50px;
+}
+
+.category-title {
+  font-size: 1.3rem;
+  color: #cf1d16;
+}
+
+.category-text {
+  font-size: 0.8rem;
+  color:gray;
+}
+
+.article-title {
+  position:relative;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+/* =================================== */
+/* GENERAL ARTICLE PROPS               */
+/* =================================== */
+article {
+  padding: 70px 0;
+}
+
+.article-title > .separator {
+      width: 80px;
+      height: 2px;
+      background-image: linear-gradient(to right, rgb(168, 115, 115), #cf1d16, rgb(158, 93, 93));
+}
+
+.big-text-shadow {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  min-width:max-content;
+  font-size: 9rem;
+  color: rgba(153, 105, 15, 0.05)
+}
+
+@media (max-width: 1350px) {
+   .big-text-shadow {
+      font-size: 7rem;
+      top: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .article-caption {
+      font-size: 2rem;
+    }
+   .big-text-shadow {
+      font-size: 4rem;
+      top: 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    .article-caption {
+      font-size: 2rem;
+    }
+   .big-text-shadow {
+      font-size: 3rem;
+      top: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+   .big-text-shadow {
+      display: none;
+    }
+}
+
+/* =================================== */
+/* DISHES ARTICLE                      */
+/* =================================== */
+.dishes-img {
+  object-fit:fill ;
+  width: 100%;
+  opacity: 0.7;
+}
+
+.dish-price {
+  background-color: #cf1d16;
+  width: 75px;
+  height: 75px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* =================================== */
+/* MENU ARTICLE                        */
+/* =================================== */
+.menu-article {
+  padding:80px 0 !important;
+}
+.menu-card {
+  height: 20vh;
+  width: 10vw;
+}
+
+.card-img-top, .card-img-bottom, .card-body {
+  width:100%;
+  height: 30vh;
+  object-fit: cover;
+}
+
+/* =================================== */
+/* TESTIMONIAL ARTICLE                 */
+/* =================================== */
+.testimonial-image {
+  border-radius: 50%;
+  width: 60px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.testimonial-person-title {
+  font-size: 0.8rem;
+  color:lightgray
+}
+
+/* =================================== */
+/* BLOG ARTICLE                        */
+/* =================================== */
+.blog-entry-button {
+  background-color: #cf1d16;
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: white;
+  border-radius: 0;
+}
+
+.blog-entry-caption {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color:gray
+}
+
+.blog-entry-date {
+  font-size: 0.7rem;
+  color:lightgrey
+}
+
+.blog-entry-text {
+  font-size: 0.8rem;
+  color:gray
+}
+
+/* =================================== */
+/* SUNSCRIBE ARTICLE                   */
+/* =================================== */
+.subscribe-article input {
+  width:100%;
+  border-radius: 0;
+}
+
+/* =================================== */
+/* FOOTER                              */
+/* =================================== */
+footer {
+  /* background-color: #262626; */
+  font-weight: 600;
+}
+
+.footer-title {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.footer-quick-link {
+  color: #cf1d16;
+  text-decoration: none;
+}
+
+.footer-quick-link:hover {
+  color:white;
+}
+
+.footer-quick-link :is(:visited, :active) {
+  text-decoration: none;
+}
+
+.footer-contact-prop-text {
+  color: rgb(216, 213, 213) !important;
 }
