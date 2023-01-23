@@ -17,6 +17,7 @@ main {
 .container-fluid {
   --bs-gutter-x: 0;
 }
+
 .blacked {
   background-color: #242424;
 }
@@ -48,17 +49,17 @@ main {
 /* NAVBAR                              */
 /* =================================== */
 .navbar {
-    z-index: 2;
-    background-color: rgb(22, 21, 21, 0.1);
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
+  z-index: 2;
+  background-color: rgb(22, 21, 21, 0.1);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 @media (max-width: 767px) {
   .navbar {
-        background-color: rgb(22, 21, 21, 0.4);
-    }
+    background-color: rgb(22, 21, 21, 0.4);
+  }
 }
 
 .navbar-brand {
@@ -98,12 +99,11 @@ nav a :is(:visited, :active) {
   border-color: white;
 }
 
-
 /* =================================== */
 /* CAROUSEL - ENTRY SECTION            */
 /* =================================== */
-#EntrySectionCarousel  img {
-  object-fit:cover !important ;
+#EntrySectionCarousel img {
+  object-fit: cover !important;
   height: 90vh !important;
 }
 
@@ -131,7 +131,7 @@ nav a :is(:visited, :active) {
 
 @media (max-width: 450px) {
   .carousel-caption-title {
-  font-size: 1.1rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -139,6 +139,7 @@ nav a :is(:visited, :active) {
   .carousel-caption-title {
     font-size: 1.5rem;
   }
+
   .carousel-caption-text {
     font-size: 0.8rem;
   }
@@ -158,11 +159,11 @@ nav a :is(:visited, :active) {
 
 .category-text {
   font-size: 0.8rem;
-  color:gray;
+  color: gray;
 }
 
 .article-title {
-  position:relative;
+  position: relative;
   font-size: 2.5rem;
   font-weight: 800;
 }
@@ -174,10 +175,10 @@ article {
   padding: 70px 0;
 }
 
-.article-title > .separator {
-      width: 80px;
-      height: 2px;
-      background-image: linear-gradient(to right, rgb(168, 115, 115), #cf1d16, rgb(158, 93, 93));
+.article-title>.separator {
+  width: 80px;
+  height: 2px;
+  background-image: linear-gradient(to right, rgb(168, 115, 115), #cf1d16, rgb(158, 93, 93));
 }
 
 .big-text-shadow {
@@ -185,49 +186,51 @@ article {
   top: -20px;
   left: 50%;
   transform: translate(-50%, 0);
-  min-width:max-content;
+  min-width: max-content;
   font-size: 9rem;
-  color: rgba(153, 105, 15, 0.05)
+  color: rgba(153, 105, 15, 0.05);
 }
 
 @media (max-width: 1350px) {
-   .big-text-shadow {
-      font-size: 7rem;
-      top: 10px;
-    }
+  .big-text-shadow {
+    font-size: 7rem;
+    top: 10px;
+  }
 }
 
 @media (max-width: 800px) {
-    .article-caption {
-      font-size: 2rem;
-    }
-   .big-text-shadow {
-      font-size: 4rem;
-      top: 10px;
-    }
+  .article-caption {
+    font-size: 2rem;
+  }
+
+  .big-text-shadow {
+    font-size: 4rem;
+    top: 10px;
+  }
 }
 
 @media (max-width: 450px) {
-    .article-caption {
-      font-size: 2rem;
-    }
-   .big-text-shadow {
-      font-size: 3rem;
-      top: 10px;
-    }
+  .article-caption {
+    font-size: 2rem;
+  }
+
+  .big-text-shadow {
+    font-size: 3rem;
+    top: 10px;
+  }
 }
 
 @media (max-width: 350px) {
-   .big-text-shadow {
-      display: none;
-    }
+  .big-text-shadow {
+    display: none;
+  }
 }
 
 /* =================================== */
 /* DISHES ARTICLE                      */
 /* =================================== */
 .dishes-img {
-  object-fit:fill ;
+  object-fit: fill;
   width: 100%;
   opacity: 0.7;
 }
@@ -250,15 +253,18 @@ article {
 /* MENU ARTICLE                        */
 /* =================================== */
 .menu-article {
-  padding:80px 0 !important;
+  padding: 80px 0 !important;
 }
+
 .menu-card {
   height: 20vh;
   width: 10vw;
 }
 
-.card-img-top, .card-img-bottom, .card-body {
-  width:100%;
+.card-img-top,
+.card-img-bottom,
+.card-body {
+  width: 100%;
   height: 30vh;
   object-fit: cover;
 }
@@ -275,7 +281,7 @@ article {
 
 .testimonial-person-title {
   font-size: 0.8rem;
-  color:lightgray
+  color: lightgray;
 }
 
 /* =================================== */
@@ -293,24 +299,24 @@ article {
 .blog-entry-caption {
   font-size: 1.1rem;
   font-weight: 500;
-  color:gray
+  color: gray;
 }
 
 .blog-entry-date {
   font-size: 0.7rem;
-  color:lightgrey
+  color: lightgrey;
 }
 
 .blog-entry-text {
   font-size: 0.8rem;
-  color:gray
+  color: gray;
 }
 
 /* =================================== */
 /* SUNSCRIBE ARTICLE                   */
 /* =================================== */
 .subscribe-article input {
-  width:100%;
+  width: 100%;
   border-radius: 0;
 }
 
@@ -333,7 +339,7 @@ footer {
 }
 
 .footer-quick-link:hover {
-  color:white;
+  color: white;
 }
 
 .footer-quick-link :is(:visited, :active) {

@@ -1,506 +1,583 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="styles/styles.css" />
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+		<title>Eatery - Creme De La Creme</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-        crossorigin="anonymous" />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <title>Eatery - Creme De La Creme</title>
-</head>
+	<body>
+		<main>
+			<!-- ============================= -->
+			<!-- ENTRY SECTION                 -->
+			<!-- ============================= -->
+			<section class="entry-section text-white position-relative container-fluid blacked">
+				<!-- NAVBAR -->
+				<nav
+					class="navbar navbar-expand-md container mt-md-3 mt-xl-5 mt-3 align-items-center justify-content-center"
+				>
+					<div class="container">
+						<a class="navbar-brand me-5 text-white" href="#">EATERY</a>
+						<button
+							class="navbar-toggler border-light border-opacity-50 text-light text-opacity-50"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarText"
+							aria-controls="navbarText"
+							aria-expanded="false"
+							aria-label="Toggle navigation"
+						>
+							<span class=""><i class="fa-solid fa-grip-lines"></i></span>
+						</button>
+						<div class="collapse navbar-collapse justify-content-center w-50" id="navbarText">
+							<ul class="navbar-nav mb-lg-0 col-12 col-xl-10 col-lg-8 col-md-9 justify-content-center">
+								<li class="nav-item">
+									<a class="nav-link" href="#">HOME</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">RECIPIES</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">SERVICES</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">ABOUT</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">NEWS</a>
+								</li>
+							</ul>
+							<span class="navbar-text">
+								<button class="btn nav-contact-btn text-white rounded-1 text-nowrap">CONTACT US</button>
+							</span>
+						</div>
+					</div>
+				</nav>
 
-<body>
-    <main>
-        <!-- ============================= -->
-        <!-- ENTRY SECTION                 -->
-        <!-- ============================= -->
-        <section class="entry-section text-white position-relative container-fluid blacked">
-            <!-- NAVBAR -->
-            <nav
-                class="navbar navbar-expand-md container mt-md-3 mt-xl-5 mt-3 align-items-center justify-content-center">
-                <div class="container">
-                    <a class="navbar-brand me-5 text-white" href="#">EATERY</a>
-                    <button class="navbar-toggler border-light border-opacity-50 text-light text-opacity-50" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarText" aria-controls="navbarText"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class=""><i class="fa-solid fa-grip-lines"></i></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-center w-50"
-                        id="navbarText">
-                        <ul
-                            class="navbar-nav mb-lg-0 col-12 col-xl-10 col-lg-8 col-md-9 justify-content-center">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">HOME</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">RECIPIES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">SERVICES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">ABOUT</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">NEWS</a>
-                            </li>
-                        </ul>
-                        <span class="navbar-text">
-                            <button class="btn nav-contact-btn text-white rounded-1 text-nowrap">
-                                CONTACT US
-                            </button>
-                        </span>
-                    </div>
-                </div>
-            </nav>
+				<!-- CAROUSEL -->
+				<div id="EntrySectionCarousel" class="carousel slide container-fluid" data-bs-ride="false">
+					<div class="carousel-indicators">
+						<button
+							type="button"
+							data-bs-target="#EntrySectionCarousel"
+							data-bs-slide-to="0"
+							class="active"
+							aria-current="true"
+							aria-label="Slide 1"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#EntrySectionCarousel"
+							data-bs-slide-to="1"
+							aria-label="Slide 2"
+						></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active container-fluid">
+							<div
+								class="slide-1 d-md-block col-xl-4 col-md-5 col-sm-8 col-10 position-absolute top-50 start-50 translate-middle text-center"
+							>
+								<p class="carousel-caption-title">DELECIOUS FOOD</p>
+								<p class="carousel-caption-text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua.
+								</p>
+								<button class="btn btn-outline-light text-white mt-3">Get started</button>
+							</div>
+							<div>
+								<img src="images/hero_2.jpg" class="d-block w-100" alt="slide1 image" />
+							</div>
+						</div>
+						<div class="carousel-item container-fluid">
+							<div
+								class="slide-1 d-md-block col-xl-4 col-md-6 col-sm-8 col-10 p-3 position-absolute top-50 start-50 translate-middle text-center"
+							>
+								<p class="fs-2 fw-bold text-white carousel-caption-title">PROFESSIONAL SERVICE</p>
+								<p class="carousel-caption-text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+									exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								</p>
+								<button class="btn btn-outline-light text-white mt-3">Get started</button>
+							</div>
+							<div>
+								<img src="images/hero_1.jpg" class="d-block w-100" alt="slide1 image" />
+							</div>
+						</div>
+					</div>
+					<button
+						class="carousel-control-prev mt-5 mt-md-0"
+						type="button"
+						data-bs-target="#EntrySectionCarousel"
+						data-bs-slide="prev"
+					>
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button
+						class="carousel-control-next mt-5 mt-md-0"
+						type="button"
+						data-bs-target="#EntrySectionCarousel"
+						data-bs-slide="next"
+					>
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</section>
 
-            <!-- CAROUSEL -->
-            <div id="EntrySectionCarousel" class="carousel slide container-fluid" data-bs-ride="false">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#EntrySectionCarousel"
-                        data-bs-slide-to="0" class="active" aria-current="true"
-                        aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#EntrySectionCarousel"
-                        data-bs-slide-to="1" aria-label="Slide 2"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active container-fluid">
-                        <div class="slide-1 d-md-block col-xl-4 col-md-5 col-sm-8 col-10 position-absolute top-50 start-50 translate-middle text-center">
-                            <p class="carousel-caption-title" >DELECIOUS FOOD</p>
-                            <p class="carousel-caption-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            </p>
-                            <button class="btn btn-outline-light text-white mt-3">Get started</button>
-                        </div>
-                        <div>
-                            <img src="images/hero_2.jpg" class="d-block w-100" alt="slide1 image"/>
-                        </div>
-                    </div>
-                    <div class="carousel-item container-fluid">
-                       <div class="slide-1 d-md-block col-xl-4 col-md-6 col-sm-8 col-10 p-3 position-absolute top-50 start-50 translate-middle text-center">
-                            <p class="fs-2 fw-bold text-white carousel-caption-title">PROFESSIONAL SERVICE</p>
-                            <p class="carousel-caption-text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat.
-                            </p>
-                            <button class="btn btn-outline-light text-white mt-3">Get started</button>
-                        </div>
-                        <div>
-                            <img src="images/hero_1.jpg" class="d-block w-100" alt="slide1 image"/>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev mt-5 mt-md-0" type="button"
-                    data-bs-target="#EntrySectionCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next mt-5 mt-md-0" type="button"
-                    data-bs-target="#EntrySectionCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </section>
-        
-        <!-- ============================= -->
-        <!-- FOOD CATEGORIES SECTION       -->
-        <!-- ============================= -->
-        <section class="food-categories-section container-fluid p-5 grayed-section">
-            <div class='row justify-content-center mt-5 mb-5'>
-                <div class="col-10 col-sm-6 col-md-3 col-lg-2 p-2 text-center">
-                    <img class="category-img" src="images/wine-glass-9.svg" alt="">
-                    <p class="category-title m-3">Drinks</p>
-                    <p class="category-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                </div>
-                <div class="col-10 col-sm-6 col-md-3 col-lg-2 p-2 text-center">
-                    <img class="category-img" src="images/fish.svg" alt="">
-                    <p class="category-title m-3">Sea Foods</p>
-                    <p class="category-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                </div>
-                <div class="col-10 col-sm-6 col-md-3 col-lg-2 p-2 text-center">
-                    <img class="category-img" src="images/coffee-56.svg" alt="">
-                    <p class="category-title m-3">Cup Cofees</p>
-                    <p class="category-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                </div>
-                <div class="col-10 col-sm-6 col-md-3 col-lg-2 p-2 text-center">
-                    <img class="category-img" src="images/salad-4.svg" alt="">
-                    <p class="category-title m-3">Fresh Salad</p>
-                    <p class="category-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                </div>
-            </div>
-        </section>
+			<!-- ============================= -->
+			<!-- FOOD CATEGORIES SECTION       -->
+			<!-- ============================= -->
+			<section class="food-categories-section container-fluid p-5 grayed-section">
+				<div class="row justify-content-center mt-5 mb-5">
+					<div class="col-10 col-sm-6 col-md-3 col-lg-2 p-2 text-center">
+						<img class="category-img" src="images/wine-glass-9.svg" alt="" />
+						<p class="category-title m-3">Drinks</p>
+						<p class="category-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+						</p>
+					</div>
+					<div class="col-10 col-sm-6 col-md-3 col-lg-2 p-2 text-center">
+						<img class="category-img" src="images/fish.svg" alt="" />
+						<p class="category-title m-3">Sea Foods</p>
+						<p class="category-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+						</p>
+					</div>
+					<div class="col-10 col-sm-6 col-md-3 col-lg-2 p-2 text-center">
+						<img class="category-img" src="images/coffee-56.svg" alt="" />
+						<p class="category-title m-3">Cup Cofees</p>
+						<p class="category-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+						</p>
+					</div>
+					<div class="col-10 col-sm-6 col-md-3 col-lg-2 p-2 text-center">
+						<img class="category-img" src="images/salad-4.svg" alt="" />
+						<p class="category-title m-3">Fresh Salad</p>
+						<p class="category-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+						</p>
+					</div>
+				</div>
+			</section>
 
-        <!-- ============================= -->
-        <!-- DISHES ARTICLE                -->
-        <!-- ============================= -->
-        <article class='dishes-article container-fluid'>
-            <div class="article-title container text-center mb-4">
-                <div class='m-auto mb-2 separator'></div>
-                <p class='article-caption'>SPECIAL DISHES</p>
-                <p class="big-text-shadow">DISHES</p>
-            </div>
-            <div class="dishes-carousel container-fluid justify-content-end row">
-                <div id="DishesCarousel" class="carousel carousel-dark slide col-12 col-md-8 mt-5 me-md-4" data-bs-ride="false">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#DishesCarousel"
-                            data-bs-slide-to="0" class="active" aria-current="true"
-                            aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#DishesCarousel"
-                            data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#DishesCarousel"
-                            data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner ">
-                        <div class="carousel-item active container-fluid">
-                            <div class="slide-1 row bg-transparent justify-content-center align-items-center">
-                                <div class="col-12 col-sm-6 position-relative">
-                                    <div class='bg-dark'>
-                                        <img src="images/dishes_1.jpg" class="dishes-img" alt="slide1 image"/>
-                                    </div>
-                                    <div class='position-absolute top-50 start-50 translate-middle w-75 h-50 text-center d-flex flex-column justify-content-center align-items-center'>
-                                        <div class="dish-price">
-                                            $11.50
-                                        </div>
-                                        <div class='dishes-text text-white h4 fw-bold mt-2'>
-                                            ORGANIC TOMATO SALAD GORGONZOLA CHEESE, CAPERS
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 position-relative">
-                                    <div class='bg-dark'>
-                                        <img src="images/dishes_2.jpg" class="dishes-img" alt="slide1 image"/>
-                                    </div>
-                                    <div class='position-absolute top-50 start-50 translate-middle w-75 h-50 text-center d-flex flex-column justify-content-center align-items-center'>
-                                        <div class="dish-price">
-                                            $12.00
-                                        </div>
-                                        <div class='dishes-text text-white h4 fw-bold mt-2'>
-                                            BAKED BROKKOL
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item container-fluid bg-transparent">
-                            <div class="slide-2 row bg-transparent justify-content-center">
-                                <div class="col-12 col-sm-6 position-relative">
-                                    <div class='bg-dark'>
-                                        <img src="images/dishes_3.jpg" class="dishes-img" alt="slide1 image"/>
-                                    </div>
-                                    <div class='position-absolute top-50 start-50 translate-middle w-75 h-50 text-center d-flex flex-column justify-content-center align-items-center'>
-                                        <div class="dish-price">
-                                            $9.50
-                                        </div>
-                                        <div class='dishes-text text-white h4 fw-bold mt-2'>
-                                            SPAGHETTI CARBONARA
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 position-relative">
-                                    <div class='bg-dark'>
-                                        <img src="images/dishes_4.jpg" class="dishes-img" alt="slide1 image"/>
-                                    </div>
-                                    <div class='position-absolute top-50 start-50 translate-middle w-75 h-50 text-center d-flex flex-column justify-content-center align-items-center'>
-                                        <div class="dish-price">
-                                            $15.00
-                                        </div>
-                                        <div class='dishes-text text-white h4 fw-bold mt-2'>
-                                            DELICIOUS LAMB CHOPS
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item container-fluid">
-                            <div class="slide-3  row bg-transparent justify-content-center">
-                                    <div class="col-12 col-sm-6 position-relative">
-                                    <div class='bg-dark'>
-                                        <img src="images/dishes_5.jpg" class="dishes-img" alt="slide1 image"/>
-                                    </div>
-                                    <div class='position-absolute top-50 start-50 translate-middle w-75 h-50 text-center d-flex flex-column justify-content-center align-items-center'>
-                                        <div class="dish-price">
-                                            $10.30
-                                        </div>
-                                        <div class='dishes-text text-white h4 fw-bold mt-2'>
-                                            AMAZING ITALIAN SPAGHETTI & MEATBALLS
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                        
-                    </div>
-                    <button class="carousel-control-prev mt-5 mt-md-0" type="button"
-                        data-bs-target="#DishesCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next mt-5 mt-md-0" type="button"
-                        data-bs-target="#DishesCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </article>
+			<!-- ============================= -->
+			<!-- DISHES ARTICLE                -->
+			<!-- ============================= -->
+			<article class="dishes-article container-fluid">
+				<div class="article-title container text-center mb-4">
+					<div class="m-auto mb-2 separator"></div>
+					<p class="article-caption">SPECIAL DISHES</p>
+					<p class="big-text-shadow">DISHES</p>
+				</div>
+				<div class="dishes-carousel container-fluid justify-content-end row">
+					<div
+						id="DishesCarousel"
+						class="carousel carousel-dark slide col-12 col-md-8 mt-5 me-md-4 ps-2 pe-2"
+						data-bs-ride="false"
+					>
+						<div class="carousel-indicators">
+							<button
+								type="button"
+								data-bs-target="#DishesCarousel"
+								data-bs-slide-to="0"
+								class="active"
+								aria-current="true"
+								aria-label="Slide 1"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#DishesCarousel"
+								data-bs-slide-to="1"
+								aria-label="Slide 2"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#DishesCarousel"
+								data-bs-slide-to="2"
+								aria-label="Slide 3"
+							></button>
+						</div>
+						<div class="carousel-inner rounded-2">
+							<div class="carousel-item active container-fluid">
+								<div class="slide-1 row bg-transparent justify-content-center align-items-center">
+									<div class="col-12 col-sm-6 position-relative">
+										<div class="bg-dark">
+											<img src="images/dishes_1.jpg" class="dishes-img" alt="slide1 image" />
+										</div>
+										<div
+											class="position-absolute top-50 start-50 translate-middle w-75 h-50 text-center d-flex flex-column justify-content-center align-items-center"
+										>
+											<div class="dish-price">$11.50</div>
+											<div class="dishes-text text-white h4 fw-bold mt-2">
+												ORGANIC TOMATO SALAD GORGONZOLA CHEESE, CAPERS
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 position-relative">
+										<div class="bg-dark">
+											<img src="images/dishes_2.jpg" class="dishes-img" alt="slide1 image" />
+										</div>
+										<div
+											class="position-absolute top-50 start-50 translate-middle w-75 h-50 text-center d-flex flex-column justify-content-center align-items-center"
+										>
+											<div class="dish-price">$12.00</div>
+											<div class="dishes-text text-white h4 fw-bold mt-2">BAKED BROKKOL</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item container-fluid bg-transparent">
+								<div class="slide-2 row bg-transparent justify-content-center">
+									<div class="col-12 col-sm-6 position-relative">
+										<div class="bg-dark">
+											<img src="images/dishes_3.jpg" class="dishes-img" alt="slide1 image" />
+										</div>
+										<div
+											class="position-absolute top-50 start-50 translate-middle w-75 h-50 text-center d-flex flex-column justify-content-center align-items-center"
+										>
+											<div class="dish-price">$9.50</div>
+											<div class="dishes-text text-white h4 fw-bold mt-2">
+												SPAGHETTI CARBONARA
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 position-relative">
+										<div class="bg-dark">
+											<img src="images/dishes_4.jpg" class="dishes-img" alt="slide1 image" />
+										</div>
+										<div
+											class="position-absolute top-50 start-50 translate-middle w-75 h-50 text-center d-flex flex-column justify-content-center align-items-center"
+										>
+											<div class="dish-price">$15.00</div>
+											<div class="dishes-text text-white h4 fw-bold mt-2">
+												DELICIOUS LAMB CHOPS
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item container-fluid">
+								<div class="slide-3 row bg-transparent justify-content-center">
+									<div class="col-12 col-sm-6 position-relative">
+										<div class="bg-dark">
+											<img src="images/dishes_5.jpg" class="dishes-img" alt="slide1 image" />
+										</div>
+										<div
+											class="position-absolute top-50 start-50 translate-middle w-75 h-50 text-center d-flex flex-column justify-content-center align-items-center"
+										>
+											<div class="dish-price">$10.30</div>
+											<div class="dishes-text text-white h4 fw-bold mt-2">
+												AMAZING ITALIAN SPAGHETTI & MEATBALLS
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button
+							class="carousel-control-prev mt-5 mt-md-0"
+							type="button"
+							data-bs-target="#DishesCarousel"
+							data-bs-slide="prev"
+						>
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button
+							class="carousel-control-next mt-5 mt-md-0"
+							type="button"
+							data-bs-target="#DishesCarousel"
+							data-bs-slide="next"
+						>
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+			</article>
 
-        <!-- ============================= -->
-        <!-- MENU ARTICLE                  -->
-        <!-- ============================= -->
-        <article class='menu-article container-fluid grayed-section'>
-            <div class="article-title text-center mb-5">
-                <div class='m-auto mb-2 separator'></div>
-                <p class='article-caption'>OUR MENU</p>
-                <p class="big-text-shadow">MENU</p>
-            </div>
-            <div class="cards-holder container-fluid justify-content-center pt-3 ps-3 pe-3">
-                <div class="row gy-3 container-fluid justify-content-center g-0">
-                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-2" >
-                        <div class="card">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <h5 class="fs-5 text-secondary">Grilled Ceasar salad, shaved reggiano</h5>
-                                <p class="card-text fs-6 text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                                <p class="card-price fs-5 text-danger">$12.00</p>
-                            </div>
-                            <img src="images/dishes_1.jpg" class="card-img-bottom" alt="...">
-                        </div>
-                    </div>
-                    <div class= "col-12 col-sm-6 col-md-3 col-lg-3 col-xl-2" >
-                        <div class="card">
-                            <img src="images/dishes_2.jpg" class="card-img-top" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <h5 class="card-title">Spicy Calamary and beans</h5>
-                                <p class="card-text fs-6 text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                                <p class="card-price fs-5 text-danger">$12.00</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-2">
-                        <div class="card">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <h5 class="card-title">Bacon wrapped whild gulf prawns</h5>
-                                <p class="card-text fs-6 text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                                <p class="card-price fs-5 text-danger">$18.00</p>
-                            </div>
-                            <img src="images/dishes_3.jpg" class="card-img-bottom" alt="...">
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-2" >
-                        <div class="card">
-                            <img src="images/dishes_4.jpg" class="card-img-top" alt="...">
-                            <div class="card-body d-flex flex-column justify-content-between">
-                                <h5 class="card-title">Seared ahi tuna fillet*, hone-ginger sauce</h5>
-                                <p class="card-text fs-6 text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                                <p class="card-price fs-5 text-danger">$16.00</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </article>
+			<!-- ============================= -->
+			<!-- MENU ARTICLE                  -->
+			<!-- ============================= -->
+			<article class="menu-article container-fluid grayed-section">
+				<div class="article-title text-center mb-5">
+					<div class="m-auto mb-2 separator"></div>
+					<p class="article-caption">OUR MENU</p>
+					<p class="big-text-shadow">MENU</p>
+				</div>
+				<div class="cards-holder container-fluid justify-content-center pt-3 ps-3 pe-3">
+					<div class="row gy-3 container-fluid justify-content-center g-0">
+						<div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card-body d-flex flex-column justify-content-between">
+									<h5 class="fs-5 text-secondary">Grilled Ceasar salad, shaved reggiano</h5>
+									<p class="card-text fs-6 text-secondary">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+									</p>
+									<p class="card-price fs-5 text-danger">$12.00</p>
+								</div>
+								<img src="images/dishes_1.jpg" class="card-img-bottom" alt="..." />
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-2">
+							<div class="card">
+								<img src="images/dishes_2.jpg" class="card-img-top" alt="..." />
+								<div class="card-body d-flex flex-column justify-content-between">
+									<h5 class="card-title">Spicy Calamary and beans</h5>
+									<p class="card-text fs-6 text-secondary">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+									</p>
+									<p class="card-price fs-5 text-danger">$12.00</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-2">
+							<div class="card">
+								<div class="card-body d-flex flex-column justify-content-between">
+									<h5 class="card-title">Bacon wrapped whild gulf prawns</h5>
+									<p class="card-text fs-6 text-secondary">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+									</p>
+									<p class="card-price fs-5 text-danger">$18.00</p>
+								</div>
+								<img src="images/dishes_3.jpg" class="card-img-bottom" alt="..." />
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-2">
+							<div class="card">
+								<img src="images/dishes_4.jpg" class="card-img-top" alt="..." />
+								<div class="card-body d-flex flex-column justify-content-between">
+									<h5 class="card-title">Seared ahi tuna fillet*, hone-ginger sauce</h5>
+									<p class="card-text fs-6 text-secondary">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+									</p>
+									<p class="card-price fs-5 text-danger">$16.00</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
 
-        <!-- ============================= -->
-        <!-- TESTIMONIAL ARTICLE           -->
-        <!-- ============================= -->
-        <article class='testimonial-article container-fluid  mt-5 mb-5'>
-            <div class="article-title container text-center mb-5">
-                <div class='m-auto mb-2 separator'></div>
-                <p class='article-caption'>TESTIMONIAL</p>
-                <p class="big-text-shadow">TESTIMONIAL</p>
-            </div>
-            <div class='row justify-content-center mt-5 mb-5 ms-0 me-0'>
-        
-                <div class="col-11 col-sm-6 col-md-4 col-lg-3 col-xl-2 p-2 m-2 text-secondary">
-                    <p class="testimonial-text">
-                        "Lorem ipsum dolor sit amet. Aut enim aliquam sit corrupti inventore ex velit ducimus. Qui dolor labore non tempore odio aut eligendi dolor aut laudantium cupiditate qui commodi itaque sed dignissimos ducimus aut quasi dolores."
-                    </p>
-                    <div class="testimonial-person d-flex">
-                        <img class="testimonial-image" src="images/person_1.jpg" alt="">
-                        <div class="flex-column ms-3 align-self-center justify-content-center">
-                            <p class="testimonial-person-name m-0">Melissa Howard</p>
-                            <p class="testimonial-person-title m-0">CEO, XYZ Company</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-11 col-sm-6 col-md-4 col-lg-3 col-xl-2 p-2 m-2 text-secondary">
-                    <p class="testimonial-text">
-                        "Lorem ipsum dolor sit amet. Aut enim aliquam sit corrupti inventore ex velit ducimus. Qui dolor labore non tempore odio aut eligendi dolor aut laudantium cupiditate qui commodi itaque sed dignissimos ducimus aut quasi dolores."
-                    </p>
-                    <div class="testimonial-person d-flex">
-                        <img class="testimonial-image" src="images/person_2.jpg" alt="">
-                        <div class="flex-column ms-3 align-self-center justify-content-center">
-                            <p class="testimonial-person-name m-0">Mike Richardson</p>
-                            <p class="testimonial-person-title m-0">CEO, XYZ Company</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-11 col-sm-6 col-md-4 col-lg-3 col-xl-2 p-2 m-2 text-secondary">
-                    <p class="testimonial-text">
-                        "Lorem ipsum dolor sit amet. Aut enim aliquam sit corrupti inventore ex velit ducimus. Qui dolor labore non tempore odio aut eligendi dolor aut laudantium cupiditate qui commodi itaque sed dignissimos ducimus aut quasi dolores."
-                    </p>
-                    <div class="testimonial-person d-flex">
-                        <img class="testimonial-image" src="images/person_3.jpg" alt="">
-                        <div class="flex-column ms-3 align-self-center justify-content-center">
-                            <p class="testimonial-person-name m-0">Charles White</p>
-                            <p class="testimonial-person-title m-0">CEO, XYZ Company</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </article>
+			<!-- ============================= -->
+			<!-- TESTIMONIAL ARTICLE           -->
+			<!-- ============================= -->
+			<article class="testimonial-article container-fluid mt-5 mb-5">
+				<div class="article-title container text-center mb-5">
+					<div class="m-auto mb-2 separator"></div>
+					<p class="article-caption">TESTIMONIAL</p>
+					<p class="big-text-shadow">TESTIMONIAL</p>
+				</div>
+				<div class="row justify-content-center mt-5 mb-5 ms-0 me-0">
+					<div class="col-11 col-sm-6 col-md-4 col-lg-3 col-xl-2 p-2 m-2 text-secondary">
+						<p class="testimonial-text">
+							"Lorem ipsum dolor sit amet. Aut enim aliquam sit corrupti inventore ex velit ducimus. Qui
+							dolor labore non tempore odio aut eligendi dolor aut laudantium cupiditate qui commodi
+							itaque sed dignissimos ducimus aut quasi dolores."
+						</p>
+						<div class="testimonial-person d-flex">
+							<img class="testimonial-image" src="images/person_1.jpg" alt="" />
+							<div class="flex-column ms-3 align-self-center justify-content-center">
+								<p class="testimonial-person-name m-0">Melissa Howard</p>
+								<p class="testimonial-person-title m-0">CEO, XYZ Company</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-11 col-sm-6 col-md-4 col-lg-3 col-xl-2 p-2 m-2 text-secondary">
+						<p class="testimonial-text">
+							"Lorem ipsum dolor sit amet. Aut enim aliquam sit corrupti inventore ex velit ducimus. Qui
+							dolor labore non tempore odio aut eligendi dolor aut laudantium cupiditate qui commodi
+							itaque sed dignissimos ducimus aut quasi dolores."
+						</p>
+						<div class="testimonial-person d-flex">
+							<img class="testimonial-image" src="images/person_2.jpg" alt="" />
+							<div class="flex-column ms-3 align-self-center justify-content-center">
+								<p class="testimonial-person-name m-0">Mike Richardson</p>
+								<p class="testimonial-person-title m-0">CEO, XYZ Company</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-11 col-sm-6 col-md-4 col-lg-3 col-xl-2 p-2 m-2 text-secondary">
+						<p class="testimonial-text">
+							"Lorem ipsum dolor sit amet. Aut enim aliquam sit corrupti inventore ex velit ducimus. Qui
+							dolor labore non tempore odio aut eligendi dolor aut laudantium cupiditate qui commodi
+							itaque sed dignissimos ducimus aut quasi dolores."
+						</p>
+						<div class="testimonial-person d-flex">
+							<img class="testimonial-image" src="images/person_3.jpg" alt="" />
+							<div class="flex-column ms-3 align-self-center justify-content-center">
+								<p class="testimonial-person-name m-0">Charles White</p>
+								<p class="testimonial-person-title m-0">CEO, XYZ Company</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
 
-        <!-- ============================= -->
-        <!-- BLOG ARTICLE                  -->
-        <!-- ============================= -->
-        <article class='blog-article container-fluid'>
-            <div class="article-title container-fluid text-center mb-5">
-                <div class='m-auto mb-2 separator'></div>
-                <p class='article-caption'>BLOG</p>
-                <p class="big-text-shadow">OUR BLOG</p>
-            </div>
-            <div class="row justify-content-center p-3 g-5 ms-0 me-0 ">
-                <div class="col-12 col-sm-8 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
-                    <div class="card border-0">
-                        <div class="row g-0">
-                            <div class="col-md-7">
-                                <img src="images/dishes_1.jpg" class="img-fluid" alt="...">
-                            </div>
-                            <div class="col-md-5">
-                                <div class="card-body">
-                                    <p class="blog-entry-caption mb-1">
-                                        How to cook beef steak with sauce
-                                    </p>
-                                    <p class="blog-entry-date"><i class="fa-regular fa-calendar-days"></i> April 22, 2018</p>
-                                    <p class="blog-entry-text">Lorem ipsum dolor sit amet. Aut enim aliquam sit corrupti inventore ex velit ducimus.</p>
-                                    <button class='btn blog-entry-button'>READ MORE</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-8 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
-                    <div class="card border-0">
-                        <div class="row g-0">
-                            <div class="col-md-7">
-                                <img src="images/dishes_2.jpg" class="img-fluid" alt="...">
-                            </div>
-                            <div class="col-md-5 justify-content-center">
-                                <div class="card-body ">
-                                    <p class="blog-entry-caption mb-1 ">
-                                        How to cook beef steak with sauce
-                                    </p>
-                                    <p class="blog-entry-date"><i class="fa-regular fa-calendar-days"></i> April 22, 2018</p>
-                                    <p class="blog-entry-text">Lorem ipsum dolor sit amet. Aut enim aliquam sit corrupti inventore ex velit ducimus.</p>
-                                    <button class='btn blog-entry-button'>READ MORE</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </article>
+			<!-- ============================= -->
+			<!-- BLOG ARTICLE                  -->
+			<!-- ============================= -->
+			<article class="blog-article container-fluid">
+				<div class="article-title container-fluid text-center mb-5">
+					<div class="m-auto mb-2 separator"></div>
+					<p class="article-caption">BLOG</p>
+					<p class="big-text-shadow">OUR BLOG</p>
+				</div>
+				<div class="row justify-content-center p-3 g-5 ms-0 me-0">
+					<div class="col-12 col-sm-8 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+						<div class="card border-0">
+							<div class="row g-0">
+								<div class="col-md-7">
+									<img src="images/dishes_1.jpg" class="img-fluid" alt="..." />
+								</div>
+								<div class="col-md-5">
+									<div class="card-body">
+										<p class="blog-entry-caption mb-1">How to cook beef steak with sauce</p>
+										<p class="blog-entry-date">
+											<i class="fa-regular fa-calendar-days"></i> April 22, 2018
+										</p>
+										<p class="blog-entry-text">
+											Lorem ipsum dolor sit amet. Aut enim aliquam sit corrupti inventore ex velit
+											ducimus.
+										</p>
+										<button class="btn blog-entry-button">READ MORE</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-sm-8 col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+						<div class="card border-0">
+							<div class="row g-0">
+								<div class="col-md-7">
+									<img src="images/dishes_2.jpg" class="img-fluid" alt="..." />
+								</div>
+								<div class="col-md-5 justify-content-center">
+									<div class="card-body">
+										<p class="blog-entry-caption mb-1">How to cook beef steak with sauce</p>
+										<p class="blog-entry-date">
+											<i class="fa-regular fa-calendar-days"></i> April 22, 2018
+										</p>
+										<p class="blog-entry-text">
+											Lorem ipsum dolor sit amet. Aut enim aliquam sit corrupti inventore ex velit
+											ducimus.
+										</p>
+										<button class="btn blog-entry-button">READ MORE</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
 
-        <!-- ============================= -->
-        <!-- SUNSCRIBE ARTICLE             -->
-        <!-- ============================= -->
-        <section class="subscribe-article container-fluid pt-5 pb-5 grayed-section">
-            <div class='col-11 col-sm-8 col-md-5 m-auto text-center'>
-                <p class="subscribe-title fs-3">Subscribe Newsletter</p>
-                <p class="subscribe-text m-auto text-secondary">
-                    Lorem ipsum dolor sit amet. Aut enim aliquam sit corrupti inventore ex velit ducimus. Qui dolor labore non tempore odio aut eligendi dolor aut laudantium cupiditate.
-                </p>
-                <div class="row d-flex align-items-center justify-content-center m-3">
-                    <div class="col-12 col-sm-7 col-md-9 pt-2">
-                        <input type="email" class="form-control border-1 round-0 w-100" placeholder='Enter Email Address'>
-                    </div>
-                    <div class="col-12 col-sm-2 col-md-2 pt-2">
-                        <button class='btn blog-entry-button'>SUBSCRIBE</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+			<!-- ============================= -->
+			<!-- SUNSCRIBE ARTICLE             -->
+			<!-- ============================= -->
+			<section class="subscribe-article container-fluid pt-5 pb-5 grayed-section">
+				<div class="col-11 col-sm-8 col-md-5 m-auto text-center">
+					<p class="subscribe-title fs-3">Subscribe Newsletter</p>
+					<p class="subscribe-text m-auto text-secondary">
+						Lorem ipsum dolor sit amet. Aut enim aliquam sit corrupti inventore ex velit ducimus. Qui dolor
+						labore non tempore odio aut eligendi dolor aut laudantium cupiditate.
+					</p>
+					<div class="row d-flex align-items-center justify-content-center m-3">
+						<div class="col-12 col-sm-7 col-md-9 pt-2">
+							<input
+								type="email"
+								class="form-control border-1 round-0 w-100"
+								placeholder="Enter Email Address"
+							/>
+						</div>
+						<div class="col-12 col-sm-2 col-md-2 pt-2">
+							<button class="btn blog-entry-button">SUBSCRIBE</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 
-    <!-- FOOTER -->
-    <footer class='container-fliud p-5 blacked'>
-        <div class="row justify-content-center gx-5 mb-5">
-            <div class="col-11 col-sm-5 col-md-3 mt-5">
-                <p class="footer-title">About Us</p>
-                <p class="footer-about-text text-secondary mb-5">
-                        Lorem ipsum dolor sit amet. Aut enim aliquam sit corrupti inventore ex velit ducimus. Qui dolor labore non tempore odio aut eligendi dolor aut laudantium cupiditate qui commodi itaque sed dignissimos ducimus aut quasi dolores."
-                </p>
-                <p class="footer-about-links  text-danger bg-transparent">
-                    <a href='https://www.twitter.com' class='footer-quick-link' target='_blank'><i class="fa-brands fa-twitter border border-secondary p-2 rounded-circle"></i></a>
-                    <a href='https://www.facebook.com' class='footer-quick-link' target='_blank'><i class="fa-brands fa-facebook  border border-secondary p-2 rounded-circle"></i></a>
-                    <a href='https://www.linkedin.com' class='footer-quick-link' target='_blank'><i class="fa-brands fa-linkedin border border-secondary p-2 rounded-circle"></i></a>
-                    <a href='https://www.instagram.com' class='footer-quick-link' target='_blank'><i class="fa-brands fa-square-instagram border border-secondary p-2 rounded-circle"></i></a>
-                </p>
-            </div>
-            <div class="col-11 col-sm-5 col-md-3 mt-5">
-                <div>
-                    <p class="footer-title">Opening Hours</p>
-                    <p class="footer-about-text text-secondary mb-5">
-                            Sunday-Thursday<br>
-                            5AM - 10PM
-                    </p>
-                </div>
-                <div>
-                    <p class="footer-title">Contact Info</p>
-                    <p class="footer-contact-prop text-secondary mb-0">
-                            Address:
-                    </p>
-                    <p class='footer-contact-prop-text text-white'>
-                        34 Street Name, City Name Here, United States
-                    </p>
-                    <p class="footer-contact-prop text-secondary mb-0">
-                            Telephone:
-                    </p>
-                    <p class='footer-contact-prop-text text-white'>
-                        +1 242 4942 290
-                    </p>
-                    <p class="footer-contact-prop text-secondary mb-0">
-                            Email:
-                    </p>
-                    <p class='footer-contact-prop-text text-white'>
-                        <a href='mailto:info@yourdomain.com' class='footer-quick-link'>info@yourdomain.com</a>
-                    </p>
-                </div>
-            </div>
-            <div class="col-11 col-sm-5 col-md-2 mt-5">
-                <p class="footer-title">Quick Links</p>
-                <div class="footer-about-text text-secondary mb-5">
-                       <p><a href="" class='footer-quick-link'>About</a></p>
-                       <p><a href="" class='footer-quick-link'>Terms of Use</a></p>
-                       <p><a href="" class='footer-quick-link'>Disclaimers</a></p>
-                       <p><a href="" class='footer-quick-link'>Contact</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="copyright pt-5 pb-5">
-            <p class='text-secondary text-center'>
-            Copyright&copy;2023 All rights reserved | This project is made with &hearts; by <a href="#" class='footer-quick-link'>Igor Kun</a>
-            </p>
-        </div>
-
-
-    </footer>
-    <!-- JS LINKS -->
-    <script src="https://kit.fontawesome.com/f425803bcb.js" crossorigin="anonymous"></script>
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous">
-    </script>
-</body>
-
+		<!-- FOOTER -->
+		<footer class="container-fliud p-5 blacked">
+			<div class="row justify-content-center gx-5 mb-5">
+				<div class="col-11 col-sm-5 col-md-3 mt-5">
+					<p class="footer-title">About Us</p>
+					<p class="footer-about-text text-secondary mb-5">
+						Lorem ipsum dolor sit amet. Aut enim aliquam sit corrupti inventore ex velit ducimus. Qui dolor
+						labore non tempore odio aut eligendi dolor aut laudantium cupiditate qui commodi itaque sed
+						dignissimos ducimus aut quasi dolores."
+					</p>
+					<p class="footer-about-links text-danger bg-transparent">
+						<a href="https://www.twitter.com" class="footer-quick-link" target="_blank"
+							><i class="fa-brands fa-twitter border border-secondary p-2 rounded-circle"></i
+						></a>
+						<a href="https://www.facebook.com" class="footer-quick-link" target="_blank"
+							><i class="fa-brands fa-facebook border border-secondary p-2 rounded-circle"></i
+						></a>
+						<a href="https://www.linkedin.com" class="footer-quick-link" target="_blank"
+							><i class="fa-brands fa-linkedin border border-secondary p-2 rounded-circle"></i
+						></a>
+						<a href="https://www.instagram.com" class="footer-quick-link" target="_blank"
+							><i class="fa-brands fa-square-instagram border border-secondary p-2 rounded-circle"></i
+						></a>
+					</p>
+				</div>
+				<div class="col-11 col-sm-5 col-md-3 mt-5">
+					<div>
+						<p class="footer-title">Opening Hours</p>
+						<p class="footer-about-text text-secondary mb-5">
+							Sunday-Thursday<br />
+							5AM - 10PM
+						</p>
+					</div>
+					<div>
+						<p class="footer-title">Contact Info</p>
+						<p class="footer-contact-prop text-secondary mb-0">Address:</p>
+						<p class="footer-contact-prop-text text-white">34 Street Name, City Name Here, United States</p>
+						<p class="footer-contact-prop text-secondary mb-0">Telephone:</p>
+						<p class="footer-contact-prop-text text-white">+1 242 4942 290</p>
+						<p class="footer-contact-prop text-secondary mb-0">Email:</p>
+						<p class="footer-contact-prop-text text-white">
+							<a href="mailto:info@yourdomain.com" class="footer-quick-link">info@yourdomain.com</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-11 col-sm-5 col-md-2 mt-5">
+					<p class="footer-title">Quick Links</p>
+					<div class="footer-about-text text-secondary mb-5">
+						<p><a href="" class="footer-quick-link">About</a></p>
+						<p><a href="" class="footer-quick-link">Terms of Use</a></p>
+						<p><a href="" class="footer-quick-link">Disclaimers</a></p>
+						<p><a href="" class="footer-quick-link">Contact</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="copyright pt-5 pb-5">
+				<p class="text-secondary text-center">
+					Copyright&copy;2023 All rights reserved | This project is made with &hearts; by
+					<a href="#" class="footer-quick-link">Igor Kun</a>
+				</p>
+			</div>
+		</footer>
+		<!-- JS LINKS -->
+		<script src="https://kit.fontawesome.com/f425803bcb.js" crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>
