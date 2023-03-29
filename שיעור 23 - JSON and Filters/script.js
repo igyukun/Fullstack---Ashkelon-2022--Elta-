@@ -86,7 +86,7 @@ function displayPost(post) {
 	postDiv.appendChild(pContent);
 	postDiv.appendChild(pId);
 	postDiv.appendChild(pUserId);
-	return postDiv;
+	return postDiv;	
 }
 
 /**
