@@ -1,0 +1,92 @@
+{
+	"products": [
+		{
+			"name": "Retro High Wheel bicycle",
+			"id": 1,
+			"price": 250.55,
+			"image": "https://media.istockphoto.com/id/1265036393/vector/cyclist-j-h-adams-on-a-penny-farthing-bicycle-side-view.jpg?s=612x612&w=0&k=20&c=bR3jgpWP-gWnJGwzoCK4hFxKYhaa2KpFatTkhsEgepA=",
+			"description": "Retro High Weel bicycle in a mint condition. Only 120 years old.",
+			"category": "Bicycle"
+		},
+		{
+			"name": "Mountain bicycle",
+			"id": 2,
+			"price": 500000.0,
+			"image": "https://img.redbull.com/images/c_fill,w_1200,h_630,g_auto,f_auto,q_auto/redbullcom/2015/10/06/1331752105496_2/m55",
+			"description": "Professional mountain bike with advanced features.A bit expensive, but still under warranty.",
+			"category": "Bicycle"
+		},
+		{
+			"name": "Concept Road bicycle",
+			"id": 3,
+			"price": 50123.0,
+			"image": "https://cdn.road.cc/sites/default/files/canyon-eco-speed.jpg",
+			"description": "Concept road bicycle with the futuristic design and a price of the jet plane.",
+			"category": "Bicycle"
+		},
+		{
+			"name": "Gyroscopic Monocycle",
+			"id": 4,
+			"price": 10500.01,
+			"image": "https://img.gkbcdn.com/s3/p/2014-11-14/tg-t3-132w-14--self-balancing-gyroscopic-electric-monocycle-blue-1571984663917.jpg",
+			"description": "Useless but cool device. Helps you to commute from the kitchen to the living room and back.",
+			"category": "Bicycle"
+		},
+		{
+			"name": "GOBKO Bike Floor Pump",
+			"id": 5,
+			"price": 19.49,
+			"image": "https://m.media-amazon.com/images/I/71JM3genCSL._AC_SL1500_.jpg",
+			"description": "Floor Bicycle Pump with Both Presta and Schrader Bicycle Pumps Valves. High Pressure 170 Psi.",
+			"category": "Bicycle Accessories"
+		},
+		{
+			"name": "KRACESS KRS-S1 Bike Helmets for Men",
+			"id": 6,
+			"price": 118.99,
+			"image": "https://m.media-amazon.com/images/I/61njeVPgQVL._AC_SL1500_.jpg",
+			"description": "Smart Helmets for Adults with 1080P 60 fps Sports Camera Dual Antenna Bluetooth.",
+			"category": "Bicycle Accessories"
+		},
+		{
+			"name": "Bike Cover for up to 3 Bikes",
+			"id": 7,
+			"price": 19.39,
+			"image": "https://m.media-amazon.com/images/I/61T-x5fU2NS._AC_SL1000_.jpg",
+			"description": "Outdoor Waterproof Bicycle Covers Rain Sun UV Dust Wind Proof with Lock Hole for Mountain Road Electric Bike Heavy Duty Bikes Black.",
+			"category": "Bicycle storage"
+		},
+		{
+			"name": "NEKRASH Duck Bike Bell",
+			"id": 8,
+			"price": 10500,
+			"image": "https://m.media-amazon.com/images/I/51eSwdkGxDL._AC_SL1001_.jpg",
+			"description": "Rubber Duck with LED Light and Propeller. As cute as useless.",
+			"category": "Bicycle Accessories"
+		},
+		{
+			"name": "Accmor 2pcs Bike Eyeglass Mirror",
+			"id": 9,
+			"price": 11.99,
+			"image": "https://m.media-amazon.com/images/I/710ZshryCES._AC_SL1500_.jpg",
+			"description": "360 Degree Adjustable Bicycle Cycling Rear View Wide Angle Mirror. Helmet mountable.",
+			"category": "Bicycle Accessories"
+		},
+		{
+			"name": "Something stupid",
+			"id": 10,
+			"price": 88888,
+			"image": "https://i1.sndcdn.com/artworks-y5EIejLgjBJz-0-t500x500.jpg",
+			"description": "Test",
+			"category": "Test"
+		},
+		{
+			"name": "Something stupid 1",
+			"id": 11,
+			"price": 333.44,
+			"image": "https://www.30secondsofcode.org/assets/cover/coconuts.jpg",
+			"description": "Test",
+			"category": "Test"
+		}
+	]
+}
