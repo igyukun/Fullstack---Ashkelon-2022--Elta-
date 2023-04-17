@@ -24,10 +24,9 @@
                         </button>
                         <ul class="dropdown-menu bg-dark">
                             <li><a class="nav-link active me-2" id='nav-home' aria-current="page" href="#"><i class="fa-solid fa-shop  me-2"></i> Shop</a></li>
-                            <li><a class="nav-link me-2" id='nav-search' href="#"><i class="fa-solid fa-magnifying-glass-arrow-right  me-2"></i> Search</a></li>
                             <li><a class="nav-link me-2" id='nav-cart' href="#"><i class="fa-solid fa-cart-shopping me-2"></i> Shopping Cart</a></li>
                             <li><hr class="dropdown-divider text-secondary"></li>
-                            <li><a class="nav-link" href="#">Something Else</a></li>
+                            <li><a class="nav-link me-2" id='nav-search' href="#"><i class="fa-solid fa-magnifying-glass-arrow-right  me-2"></i> Search</a></li>                            
                         </ul>
                     </div>
                 </div>
@@ -42,22 +41,49 @@
         </div>
     </nav>
 
-    <!-- MODAL DIALOG -->
-    <div id="myModal" class="modal">
+    <!-- CART MODAL DIALOG -->
+    <div id="cartModal" class="modal">
         <div class="modal-dialog modal-scrollable">
             <!-- Modal content -->
             <div class="modal-content">
                 <!-- Modal Header -->
                 <div class="modal-header border-bottom">
-                    <h4 class="modal-title">Your Cart</h4>
+                    <h4 class="modal-title"><i class="fa-solid fa-cart-shopping"></i> Shopping Cart</h4>
                     <button type="button" class="btn btn-close-modal btn-sm btn-outline-warning ps-2 pe-2"><i class="fa-solid fa-xmark"></i></button>
                 </div>
                 <div class="modal-body">
                     <div class="cartList">
                     </div>
-                    <button class="btn btn-outline-warning btn-sm mt-2" id="btnUpdateCart" disabled>Update Cart</button>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- ALERT MODAL DIALOG -->
+    <div id="alertModal" class="modal">
+        <div class="modal-dialog modal-scrollable">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header border-bottom">
+                    <h5 class="modal-title">Alert</h5>
+                    <button type="button" class="btn btn-close-alert-modal btn-sm btn-outline-warning ps-2 pe-2"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="modal-body">
+                    <p id="alertText" class='mb-4'></p>
+                    <div class="d-flex justify-content-end">
+                        <button class='btn btn-outline-warning btn-go-to-cart btn-sm active me-2'>VIEW CART</button>
+                        <button class='btn btn-outline-warning btn-discard-alert btn-sm'>DISCARD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- PRODUCT MODEL DIALOG -->
+    <div id="productModal" class="modal">
+        <div class="modal-dialog modal-scrollable product-page">
         </div>
     </div>
 
