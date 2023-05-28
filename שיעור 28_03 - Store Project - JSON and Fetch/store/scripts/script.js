@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 	document.querySelector('#nav-home')
         .addEventListener('click', () => fetchData());
-	document.querySelector('#nav-search')
-        .addEventListener('click', () => search_items());
 	document.querySelector('#nav-cart')
         .addEventListener('click', displayCartModal);
     document.querySelector('#btnDisplayCartModal')
@@ -18,10 +16,43 @@ const   INCREMENT_ITEMS = 2;
 const   DECREMENT_ITEMS = 3;
 
 let     products_obj    = {};
+let     categories      = {};
 
 
 fetchData();
 
+/* ========================================================== */
+/*                 Manipulate Categories                      */
+/* ========================================================== */
+function populateCategoriesList() {
+    if (categories.length > 0) {
+        let categoriesList = document.querySelector('#inputCategorySelect');
+        categoriesList.innerHTML = '';
+        categoriesList.display = 'flex';
+        
+        categories.forEach((category) => {
+            let optionElement = document.createElement('option');
+            optionElement.value = category.toLowerCase();
+            optionElement.innerHTML = category;
+            optionElement.id = `${category}Id`;
+            categoriesList.appendChild(optionElement);
+            optionElement.addEventListener('click', () => {
+                displayCategoryProducts (category);
+            })
+        });
+    }
+}
+
+function displayCategoryProducts (category) {
+    console.log('displayCategoryProducts' + category);
+    let categoryProducts = [];
+    products_obj.forEach ((product) => {
+        if (product.category.toLowerCase() === category.toLowerCase()) {
+            categoryProducts.push(product);
+        }
+    });
+    drawCardsBox(categoryProducts);
+}
 
 /* ========================================================== */
 /*        Display the main page with item boxes               */
@@ -31,7 +62,9 @@ function fetchData () {
     .then((response) => response.json())
     .then((data) => {
         products_obj = data.products;
-        drawCardsBox();
+        categories = data.categories;
+        console.log(categories);
+        drawCardsBox(products_obj);
     })
     .catch((error) => {
         console.log(error);
@@ -48,11 +81,11 @@ function getItemObjById (itemId) {
 }
 
 
-function drawCardsBox() {
+function drawCardsBox(list) {
     let cardBox = document.querySelector('#cardsBox');
     cardBox.innerHTML = '';
 
-	products_obj.forEach((item) => {        
+	list.forEach((item) => {        
 		cardBox.appendChild(showItemCard(item));
         document.querySelector(`#cardItem${item.id}`)
             .addEventListener('mouseup', (event) => {
@@ -105,7 +138,6 @@ function displayProductModal(item) {
     closeAllModals();
     const modal = document.querySelector('#productModal');
     modal.style.display = 'flex';
-    // debugger;
     let productPage = document.querySelector('.product-page');
     productPage.innerHTML = '';
     let productContent = document.createElement('div');
@@ -144,10 +176,10 @@ function buildProductPageHtml (item) {
                             <img src="${item.image}" alt="${item.name} image">
                         </div>
                         <div class="col-12 col-sm-8 p-2" id="infoProductPage">
-                            <h5 class="cardTitle">${item.name}</h5>
-                            <p class="cardText">${item.description}</p>
-                            <p class="cardCategory"><b>Category:</b>  ${item.category}</p>
-                            <p class="cardPrice">$${item.price.toLocaleString('en')}</p>
+                            <h5 class="productTitle">${item.name}</h5>
+                            <p class="productText">${item.description}</p>
+                            <p class="productCategory"><b>Category:</b>  ${item.category}</p>
+                            <p class="productPrice">$${item.price.toLocaleString('en')}</p>
                         </div>
                     </div>
                 </div>
@@ -297,7 +329,7 @@ function drawCartItem (id, amount) {
     let item = products_obj.find(item => item.id == Number(id));
     let itemElement = document.createElement ('div');
     itemElement.innerHTML = `<p class="list-item-name ps-1" id="cartItemTitle${item.id}">${item.name}</p>
-                            <div class='input-group input-group-sm justify-content-center'>
+                            <div class='input-group input-group-sm justify-content-center input-group-cart-item'>
                                 <button class='btn btn-outline-warning' id='btnCartIncrement${item.id}'><i class="fa-solid fa-arrow-left"></i></button>
                                 <input class='form-control bg-dark text-warning justify-content-center'  id='listItemAmmount${item.id}' value='${amount}'>
                                 <button class='btn btn-outline-warning' id='btnCartDecrement${item.id}'><i class="fa-solid fa-arrow-right"></i></button>
@@ -309,7 +341,7 @@ function drawCartItem (id, amount) {
 
     document.querySelector(`#cartItemTitle${item.id}`)
         .addEventListener('mouseup', () => displayProductModal(item));
-        
+
     document.querySelector(`#deleteCartItemBtn${item.id}`)
         .addEventListener('mouseup', () => {
             updateCartItems (item.id, REMOVE_ITEM);
@@ -382,7 +414,7 @@ function displayAlertModal(text) {
 
 
 /* ===================================== */
-/*        GENRAL MODAL FUNCTIONS         */
+/*        GENERAL MODAL FUNCTIONS         */
 /* ===================================== */
 function closeAllModals() {
     // debugger;

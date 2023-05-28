@@ -13,7 +13,7 @@
     <title>THE CYCLE BARN</title>
     <link rel="icon" type="image/x-icon" href="images/favicon-main.avif">
 </head>
-<body class='bg-dark'>
+<body class='container-flex'>
     <nav class="navbar navbar-expand-sm navbar-light sticky-top bg-dark">
         <div class="container-fluid">            
             <div class="d-flex justify-content-center" id="navbarNavAltMarkup">
@@ -26,7 +26,6 @@
                             <li><a class="nav-link active me-2" id='nav-home' aria-current="page" href="#"><i class="fa-solid fa-shop  me-2"></i> Shop</a></li>
                             <li><a class="nav-link me-2" id='nav-cart' href="#"><i class="fa-solid fa-cart-shopping me-2"></i> Shopping Cart</a></li>
                             <li><hr class="dropdown-divider text-secondary"></li>
-                            <li><a class="nav-link me-2" id='nav-search' href="#"><i class="fa-solid fa-magnifying-glass-arrow-right  me-2"></i> Search</a></li>                            
                         </ul>
                     </div>
                 </div>
@@ -51,6 +50,7 @@
                     <h4 class="modal-title"><i class="fa-solid fa-cart-shopping"></i> Shopping Cart</h4>
                     <button type="button" class="btn btn-close-modal btn-sm btn-outline-warning ps-2 pe-2"><i class="fa-solid fa-xmark"></i></button>
                 </div>
+                 <!-- Modal Body -->
                 <div class="modal-body">
                     <div class="cartList">
                     </div>
@@ -59,12 +59,12 @@
         </div>
     </div>
 
-    <!-- ALERT MODAL DIALOG -->
+    <!-- CART ALERT MODAL DIALOG -->
     <div id="alertModal" class="modal">
         <div class="modal-dialog modal-scrollable">
             <!-- Modal content -->
             <div class="modal-content">
-                <!-- Modal Header -->
+                <!-- Modal Body -->
                 <div class="modal-header border-bottom">
                     <h5 class="modal-title">Alert</h5>
                     <button type="button" class="btn btn-close-alert-modal btn-sm btn-outline-warning ps-2 pe-2"><i class="fa-solid fa-xmark"></i></button>
@@ -73,7 +73,7 @@
                     <p id="alertText" class='mb-4'></p>
                     <div class="d-flex justify-content-end">
                         <button class='btn btn-outline-warning btn-go-to-cart btn-sm active me-2'>VIEW CART</button>
-                        <button class='btn btn-outline-warning btn-discard-alert btn-sm'>DISCARD</button>
+                        <button class='btn btn-outline-warning btn-discard-alert btn-sm'>CLOSE</button>
                     </div>
                 </div>
             </div>
@@ -81,7 +81,7 @@
     </div>
 
 
-    <!-- PRODUCT MODEL DIALOG -->
+    <!-- PRODUCT MODAL DIALOG -->
     <div id="productModal" class="modal">
         <div class="modal-dialog modal-scrollable product-page">
         </div>
@@ -89,7 +89,7 @@
 
     <!-- MAIN SECTION -->
     <section class="header-image-section d-flex justify-content-center">
-        <img src="./images/barn2.avif" alt="From https://www.rei.com/blog/cycle/diy-reuse-old-handlebars-to-create-a-hanging-bike-rack" class="header-image w-100">
+        <img src="./images/barn1.jpg" alt="From https://www.rei.com/blog/cycle/diy-reuse-old-handlebars-to-create-a-hanging-bike-rack" class="header-image w-100">
     </section>
     
     <section class="p-5 container-fluid bg-dark" id='home-section'>

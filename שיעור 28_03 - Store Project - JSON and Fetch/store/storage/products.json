@@ -6,7 +6,7 @@
 			"price": 250.55,
 			"image": "https://media.istockphoto.com/id/1265036393/vector/cyclist-j-h-adams-on-a-penny-farthing-bicycle-side-view.jpg?s=612x612&w=0&k=20&c=bR3jgpWP-gWnJGwzoCK4hFxKYhaa2KpFatTkhsEgepA=",
 			"description": "Retro High Weel bicycle in a mint condition. Only 120 years old.",
-			"category": "Bicycle"
+			"category": "Bicycles"
 		},
 		{
 			"name": "Mountain bicycle",
@@ -14,7 +14,7 @@
 			"price": 500000.0,
 			"image": "https://img.redbull.com/images/c_fill,w_1200,h_630,g_auto,f_auto,q_auto/redbullcom/2015/10/06/1331752105496_2/m55",
 			"description": "Professional mountain bike with advanced features. Quite expensive, but still under the manufacturer warranty.",
-			"category": "Bicycle"
+			"category": "Bicycles"
 		},
 		{
 			"name": "Concept Road bicycle",
@@ -22,7 +22,7 @@
 			"price": 50123.0,
 			"image": "https://cdn.road.cc/sites/default/files/canyon-eco-speed.jpg",
 			"description": "Concept road bicycle with the futuristic design and a price of the jet plane.",
-			"category": "Bicycle"
+			"category": "Bicycles"
 		},
 		{
 			"name": "Gyroscopic Monocycle",
@@ -30,7 +30,7 @@
 			"price": 10500.01,
 			"image": "https://img.gkbcdn.com/s3/p/2014-11-14/tg-t3-132w-14--self-balancing-gyroscopic-electric-monocycle-blue-1571984663917.jpg",
 			"description": "Useless but cool device. Helps you to commute from the kitchen to the living room and back.",
-			"category": "Bicycle"
+			"category": "E-bikes"
 		},
 		{
 			"name": "GOBKO Bike Floor Pump",
@@ -54,7 +54,7 @@
 			"price": 19.39,
 			"image": "https://m.media-amazon.com/images/I/61T-x5fU2NS._AC_SL1000_.jpg",
 			"description": "Outdoor Waterproof Bicycle Covers Rain Sun UV Dust Wind Proof with Lock Hole for Mountain Road Electric Bike Heavy Duty Bikes Black.",
-			"category": "Bicycle storage"
+			"category": "Bicycle Storage"
 		},
 		{
 			"name": "NEKRASH Duck Bike Bell",
@@ -73,20 +73,86 @@
 			"category": "Bicycle Accessories"
 		},
 		{
-			"name": "Something stupid",
+			"name": "BMC KAIUS 01 ONE - Carbon Gravel Bike - 2023",
 			"id": 10,
-			"price": 88888,
-			"image": "https://i1.sndcdn.com/artworks-y5EIejLgjBJz-0-t500x500.jpg",
-			"description": "Test",
-			"category": "Test"
+			"price": 9663.03,
+			"image": "https://images.bike24.net/i/mb/cb/26/26/kaius-01-one-white-black-1-1315361.jpg",
+			"description": "An unprecedented premium carbon layup uses high—module fibers to provide stiffness, keep the weight low and balance out the added weight required to achieve compliance and robustness. This pushes overall weight to a minimum and power transfer to a maximum. Frame areas exposed to rocks and shocks, such as the lower face of the downtube, feature protection to give riders peace of mind when pushing over bone—rattling surfaces.",
+			"category": "Bicycles"
 		},
 		{
-			"name": "Something stupid 1",
+			"name": "Specialized TURBO LEVO EXPERT - Carbon MTB E-Bike - 2023",
 			"id": 11,
-			"price": 333.44,
-			"image": "https://www.30secondsofcode.org/assets/cover/coconuts.jpg",
-			"description": "Test",
-			"category": "Test"
+			"price": 6133.61,
+			"image": "https://images.bike24.net/media/720/i/mb/22/7f/c8/96421-31-levo-expert-carbon-mrn-blk-02-1000828.jpg",
+			"description": "The Turbo Levo embodies everything Specialized has learned about mountain biking over the years - the perfect combination of tuned chassis, suspension, geometry and engine assistance that adds up to an incredible riding experience. It's the liveliest and most nimble E-MTB Specialized has developed to date. The MasterMind Turbo Control Unit (TCU) is essentially the 'brain' of the bike. It's the hardware and software that controls how the motor, battery, bike and you interact. It allows real-time support tuning while you ride and displays all relevant data about your bike and your ride. The MasterMind TCU also allows over-the-air updates to help your bike get better over time. In addition, the MasterMind TCU can communicate with your Mission Control app for advanced tuning, on-trail diagnostics, and more.",
+			"category": "E-bikes"
+		},
+		{
+			"name": "Continental Grand Prix 5000 Bundle - 2x Folding Tire + Race Tube",
+			"id": 12,
+			"price": 64.7,
+			"image": "https://images.bike24.net/media/720/i/mb/bc/7f/7d/308205-00-d-633139.jpg",
+			"description": "This bundle consists of 2 Continental Grand Prix 5000 folding tires and 2 Continental Race 28 tubes with selectable valve length.",
+			"category": "Parts"
+		},
+		{
+			"name": "Favero Assioma Uno Powermeter Pedal",
+			"id": 13,
+			"price": 64.7,
+			"image": "https://images.bike24.net/media/720/i/mb/d6/9a/e5/347681-00-d-741636.jpg",
+			"description": "The Assioma Uno pedals measure your performance on the left pedal, but could be easily converted to a two-way measurement. Communication with your bike computer or smartphone is wireless via Bluetooth or ANT+. Last but not least the Favero Powermeter pedals are as easy to install as normal pedals and can be changed quickly from one bike to the other.",
+			"category": "Parts"
+		},
+		{
+			"name": "Garmin Edge 1040 Bundle GPS Cycling Computer",
+			"id": 14,
+			"price": 478.98,
+			"image": "https://images.bike24.net/media/720/i/mb/dc/d8/27/garmin-edge-1040-bundle-1253279.jpg",
+			"description": "This bundle consists of 2 Continental Grand Prix 5000 folding tires and 2 Continental Race 28 tubes with selectable valve length.",
+			"category": "Electronics"
+		},
+		{
+			"name": "Sigma Sport Aura 100 Set / Blaze Link - Front Light + Rear Light",
+			"id": 15,
+			"price": 54.61,
+			"image": "https://images.bike24.net/media/720/i/mb/a0/9a/fa/sigma-sport-aura-100-set-blaze-link-front-light-rear-light-2-1096397.jpg",
+			"description": "The AURA 100/BLAZE LINK light set allows front and rear bike lights to be controlled and experienced in a brand new way. Double-clicking the front light automatically switches on the rear light thanks to the intelligent link function. LED indicators on the top of the front light always provide a battery status overview for both lights. Approved for road traffic, the AURA 100 LINK has up to 100 lux and a range of 110 metres (360 feet), and the BLAZE LINK with its brake light function ensures maximum visibility. The overall concept won the 2021 Eurobike Award.",
+			"category": "Electronics"
+		},
+		{
+			"name": "Sidi Genius 10 Road Shoes - white/white",
+			"id": 16,
+			"price": 151.25,
+			"image": "https://images.bike24.net/media/720/i/mb/7c/27/43/340585-00-d-721426.jpg",
+			"description": "Genius 10 is everything you expect in a pro-level road shoe: Millennium 5 Carbon Composite Sole, Caliper Buckle two-way ratchet closure and many more.",
+			"category": "Clothing & Shoes"
+		},
+		{
+			"name": "Powerbar PowerGel Original with Carbohydrates - 24x41g",
+			"id": 17,
+			"price": 42.98,
+			"image": "https://images.bike24.net/media/720/i/mb/ae/6a/42/311924-00-d-643330.jpg",
+			"description": "Concentrated carbohydrate gel with sodium for athletes. he original PowerGel® provides you with C2MAX carbohydrates in combination with sodium. C2MAX is a carbohydrate mix that contains a scientifically developed 2:1 ratio of glucose and fructose sources.",
+			"category": "Sports Nutrition & Body Care"
+		},
+		{
+			"name": "Cyclus Tools Hand Cleaner 500g",
+			"id": 18,
+			"price": 7.55,
+			"image": "https://images.bike24.net/media/720/i/mb/a0/e5/ad/8562-00-d-15267.jpg",
+			"description": "Hand cleaner to remove grease, dirt and oil. Included in delivery: Hand Cleaner 500g.",
+			"category": "Sports Nutrition & Body Care"
 		}
-	]
+	],
+	"categories": [
+		"Bicycles",
+		"E-bikes",
+		"Bicycle Accessories",
+		"Bicycle Storage",
+		"Parts",
+		"Electronics",
+		"Clothing & Shoes",
+		"Sports Nutrition & Body Care"
+	]	
 }
